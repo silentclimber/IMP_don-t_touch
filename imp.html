@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px; padding: 0px; box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(39, 15, 15);
+        }
+        #main{
+            margin:140px auto;
+            height: 300px;
+            width: 50%;
+            display: flex; justify-content: center; align-items: center;
+            border: 2px solid none;
+        }
+        #main #btn{
+            border: 1px solid rgb(10, 4, 4);
+            background-color: rgb(39, 15, 15);
+            color: rgb(84, 40, 40);
+            font-size: 30px;
+             /* display: none; */
+             transition: 0.4s;
+        }
+        #main #btn:hover{
+            color: brown;
+            transform: scale(1.1);
+            border: 1px solid rgb(39, 15, 15);
+            text-decoration: underline;
+        }
+        #main #links{
+            background-color: rgb(185, 199, 211);
+            border: 2px solid none;
+            padding: 20px 20px;
+            box-shadow: 0px 0px 10px 10px grey;
+            height: 550px;
+            display: none;
+            overflow: scroll;
+        }
+        #close{
+            box-shadow: 0px 0px 10px 10px grey;
+            border-radius: 20%;
+            font-size: 30px;
+            display: none;
+            border: none;
+            /* background-color: white; */
+            transform: translate(900px, 40px);
+        }
+        @media screen and (max-width:660px){
+            #close{
+                transform: translate(490px, 40px); 
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <button id="close" onclick="cls()">⌫</button>
+    <div id="main">
+        <button id="btn" onclick="show()">Click Me to shows Threads!</button>
+        <div id="links">
+            <!-- <button id="close" onclick="cls()">⌫</button> -->
+            <p>from maya:</p>
+            <a href="https://www.facebook.com/groups/778216272289686">https://www.facebook.com/groups/778216272289686</a><br>
+            <a href="https://www.facebook.com/groups/161000418424676">https://www.facebook.com/groups/161000418424676</a><br>
+            <a href="https://www.facebook.com/groups/1682347608785164">https://www.facebook.com/groups/1682347608785164</a>
+
+            <p>from sophie:</p>
+            <a href="https://www.facebook.com/groups/1982403668741632">https://www.facebook.com/groups/1982403668741632</a>
+            <a href="https://www.facebook.com/groups/352984265854190"></a>
+
+            <p>from william:</p>
+            <a href="https://www.facebook.com/groups/kawarthaclassifies"> https://www.facebook.com/groups/kawarthaclassifies</a><br>
+            <a href="https://www.facebook.com/groups/725463967836155">https://www.facebook.com/groups/725463967836155</a>
+
+            <p>from erik:</p>
+            <a href=" https://www.facebook.com/groups/3190898057608716"> https://www.facebook.com/groups/3190898057608716</a>
+
+            <p>for smith kalvin:</p>
+            <a href="https://www.facebook.com/groups/Loyalistmarketplace">https://www.facebook.com/groups/Loyalistmarketplace</a><br>
+            <a href="https://www.facebook.com/groups/586068964857421">https://www.facebook.com/groups/586068964857421</a>
+
+            <p>for emma:</p>
+            <a href="https://www.facebook.com/groups/480301818787272">https://www.facebook.com/groups/480301818787272</a><br>
+            <a href="https://www.facebook.com/groups/495906553900171">https://www.facebook.com/groups/495906553900171</a>
+
+            <p>for ellie:</p>
+            <a href="https://www.facebook.com/groups/1366330910055314">https://www.facebook.com/groups/1366330910055314</a><br>
+            <a href="https://www.facebook.com/groups/1505174276419890">https://www.facebook.com/groups/1505174276419890</a><br>
+            <a href="https://www.facebook.com/groups/1412635462327370">https://www.facebook.com/groups/1412635462327370</a>
+
+            <p>For hannah:</p>
+            <a href="https://www.facebook.com/groups/1429898187264028">https://www.facebook.com/groups/1429898187264028</a><br>
+            <a href="https://www.facebook.com/groups/elmirawoolwichbuyandsell">https://www.facebook.com/groups/elmirawoolwichbuyandsell</a><br>
+            <a href="https://www.facebook.com/groups/310174642519980">https://www.facebook.com/groups/310174642519980</a>
+
+
+
+        </div>
+    </div>
+<script>
+function show(){
+    document.getElementById('btn').style.display = "none";
+    document.getElementById('links').style.display = "block";
+    // document.getElementById('links').style.transitionDuration = "1.6s";
+    document.getElementById('close').style.display = "block";
+}
+function cls() {
+    
+    document.getElementById('btn').style.display = "block";
+    document.getElementById('links').style.display = "none";
+    document.getElementById('close').style.display = "none";
+}
+</script>
+</body>
+</html>
