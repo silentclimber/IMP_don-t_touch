@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px; padding: 0px; box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(39, 15, 15);
+        }
+        #main{
+            margin:140px auto;
+            height: 300px;
+            width: 50%;
+            display: flex; justify-content: center; align-items: center;
+            border: 2px solid none;
+        }
+        #main #btn{
+            border: 1px solid rgb(10, 4, 4);
+            background-color: rgb(39, 15, 15);
+            color: rgb(84, 40, 40);
+            font-size: 30px;
+             /* display: none; */
+             transition: 0.4s;
+        }
+        #main #btn:hover{
+            color: brown;
+            transform: scale(1.1);
+            border: 1px solid rgb(39, 15, 15);
+            text-decoration: underline;
+        }
+        #main #links{
+            background-color: rgb(185, 199, 211);
+            border: 2px solid none;
+            padding: 20px 20px;
+            box-shadow: 0px 0px 10px 10px grey;
+            height: 550px;
+            display: none;
+            overflow: scroll;
+        }
+        #close{
+            box-shadow: 0px 0px 10px 10px grey;
+            border-radius: 20%;
+            font-size: 30px;
+            display: none;
+            border: none;
+            /* background-color: white; */
+            transform: translate(900px, 40px);
+        }
+        @media screen and (max-width:660px){
+            #close{
+                transform: translate(490px, 40px); 
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <button id="close" onclick="cls()">⌫</button>
+    <div id="main">
+        <button id="btn" onclick="show()">Click Me to shows Threads!</button>
+        <div id="links">
+            <!-- <button id="close" onclick="cls()">⌫</button> -->
+      
+            <a href="https://www.facebook.com/groups/2273051266267045/">https://www.facebook.com/groups/2273051266267045/</a><br>
+            <a href="https://www.facebook.com/groups/durhamregionandgtaspowerhousenetworkingroup">https://www.facebook.com/groups/durhamregionandgtaspowerhousenetworkingroup/</a><br>
+            <a href="httpshttps://www.facebook.com/groups/778216272289686/">https://www.facebook.com/groups/778216272289686/</a><br>
+            <a href="https://www.facebook.com/groups/344379388939479">https://www.facebook.com/groups/344379388939479/</a><br>
+            <a href="https://www.facebook.com/groups/gta.networkhub.ca/">https://www.facebook.com/groups/gta.networkhub.ca</a><br>
+            <a href="https://www.facebook.com/groups/318582894932658">https://www.facebook.com/groups/318582894932658/</a><br>
+            <a href="https://www.facebook.com/groups/377834623337782">https://www.facebook.com/groups/377834623337782</a><br>
+            <a href="https://www.facebook.com/groups/541528500074587">https://www.facebook.com/groups/541528500074587</a><br>
+            <a href="https://www.facebook.com/groups/362681161191595">https://www.facebook.com/groups/362681161191595</a><br>
+            <a href="https://www.facebook.com/groups/180079505493953">https://www.facebook.com/groups/180079505493953</a><br>
+            <a href="https://www.facebook.com/groups/greatbuys.ca">https://www.facebook.com/groups/greatbuys.ca</a><br>
+            <a href="https://www.facebook.com/groups/553167318032470">https://www.facebook.com/groups/553167318032470</a><br>
+            <a href="https://www.facebook.com/groups/804997079549157">https://www.facebook.com/groups/804997079549157</a><br>
+            <a href="https://www.facebook.com/groups/611998462895500">https://www.facebook.com/groups/611998462895500/</a><br>
+            <a href="https://www.facebook.com/groups/owsales">https://www.facebook.com/groups/owsales</a><br>
+
+        </div>
+    </div>
+<script>
+function show(){
+    document.getElementById('btn').style.display = "none";
+    document.getElementById('links').style.display = "block";
+    // document.getElementById('links').style.transitionDuration = "1.6s";
+    document.getElementById('close').style.display = "block";
+}
+function cls() {
+    
+    document.getElementById('btn').style.display = "block";
+    document.getElementById('links').style.display = "none";
+    document.getElementById('close').style.display = "none";
+}
+</script>
+</body>
+</html>
